@@ -1,6 +1,6 @@
 // Variables
-var name = "Archana";
-var email = "archana@perfectzdigital.com"
+// var name = "Archana";
+// var email = "archana@perfectzdigital.com"
 
 // Page Load Function
 function pageLoaded(){
@@ -19,7 +19,7 @@ function sendStatement(){
 	var statement = {  
 	    "actor": {  
 	        "mbox": "mailto:"+email,  
-	        "name": name,  
+	        "name": username,  
 	        "objectType": "Agent"  
 	    },  
 	    "verb": {  
