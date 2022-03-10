@@ -1,0 +1,19 @@
+{
+  "name": "xapi-h5p-interaction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archanapd/xapi-h5p-interaction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/archanapd/xapi-h5p-interaction/issues"
+  },
+  "homepage": "https://github.com/archanapd/xapi-h5p-interaction#readme"
+}
