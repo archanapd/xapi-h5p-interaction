@@ -1,14 +1,14 @@
 // Variables
-// var name = "Archana";
-// var email = "archana@perfectzdigital.com"
+ var username = "Perfect";
+ var email = "archana@perfectzdigital.com"
 
 // Page Load Function
 function pageLoaded(){
 	// Connecting to LRS
-	var key = "ELgFXA1adhm_KirxAtQ";
-	var secret = "F6bPs5QvJGlAI8GNM2c";
+	var key = "a7112d46c9dc9bc8fd37aa7453b3a24d9dc4dab2";
+	var secret = "9727baae1cba09bf1ffee3af6bdb14117dfa135c";
 	var conf = {
-	  "endpoint" : "https://cloud.scorm.com/lrs/ES1LU3LI4W/sandbox/",
+	  "endpoint" : "https://learninglocker.cakap.com/data/xAPI/",
 	  "auth" : "Basic " + toBase64(key + ':' + secret),
 	};
 	ADL.XAPIWrapper.changeConfig(conf);
