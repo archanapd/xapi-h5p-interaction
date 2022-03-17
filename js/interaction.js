@@ -1,5 +1,5 @@
 // Variables
- var username = "Perfectss";
+ var username = "Archana PPPP";
  var email = "archana@perfectzdigital.com"
 
 // Page Load Function
@@ -15,8 +15,8 @@ function pageLoaded(){
 }
 
 // Button click
-function sendStatement(){
-	var statement = {  
+function sendStatements(){
+	var statements = [{  
 	    "actor": {  
 	        "mbox": "mailto:"+email,  
 	        "name": username,  
@@ -27,16 +27,35 @@ function sendStatement(){
 	        "display": {"en-US": "interacted"}  
 	    },  
 	    "object": {  
-	        "id": "https://perfectzdigital.h5p.com/content/1291575879006396427",  
+	        "id": "https://perfectzdigital.h5p.com/content/1291589676355054657",  
 	        "definition": {  
 	            "name": {"en-US": "Fetching data from H5P"},  
-	            "description": {"en-US": "Fetching H5p scores and passing it to SCORM"}  
+	            "description": {"en-US": "Fetching H5p drag drop scores and passing it to LL cakap"}  
 	        },  
 	        "objectType": "Activity"  
 	    }  
-	};
+	}, {
+		"actor": {  
+	        "mbox": "mailto:"+email,  
+	        "name": username,  
+	        "objectType": "Agent"  
+	    },  
+	    "verb": {  
+	        "id": "http://adlnet.gov/expapi/verbs/interacted",  
+	        "display": {"en-US": "interacted"}  
+	    },  
+	    "object": {  
+	        "id": "https://perfectzdigital.h5p.com/content/1291589688074243917",  
+	        "definition": {  
+	            "name": {"en-US": "Fetching data from H5P"},  
+	            "description": {"en-US": "Fetching H5p single select scores and passing it to LL cakap"}  
+	        },  
+	        "objectType": "Activity"  
+	    }
 
-	ADL.XAPIWrapper.sendStatement(statement); 
+	}];
+
+	ADL.XAPIWrapper.sendStatements(statements); 
 
 	// Alert message
 	alert('Data has been sent')
